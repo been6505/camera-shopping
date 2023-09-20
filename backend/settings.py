@@ -138,14 +138,19 @@ if not DEBUG:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'myshop',
-            'USER': 'root',
-            'PASSWORD': '6505',
-            'HOST': 'localhost',  # Use '127.0.0.1' if you prefer
-            'PORT': '3306',       # MySQL default port
-        }
-    }
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }}
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.mysql',
+    #         'NAME': 'myshop',
+    #         'USER': 'root',
+    #         'PASSWORD': '6505',
+    #         'HOST': 'localhost',  # Use '127.0.0.1' if you prefer
+    #         'PORT': '3306',       # MySQL default port
+    #     }
+    # }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
