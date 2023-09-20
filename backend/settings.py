@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 import os
+import dj_database_url
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -127,17 +130,22 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myshop',
-        'USER': 'root',
-        'PASSWORD': '6505',
-        'HOST': 'localhost',  # Use '127.0.0.1' if you prefer
-        'PORT': '3306',       # MySQL default port
+if not DEBUG:
+    DATABASES = {
+        "default": dj_database_url.parse(os.environ.get("postgres://myweb_qf07_user:pTs0ptBxAxcxDDIb23laUENNkcuTYURP@dpg-ck58dt6ru70s7398jhb0-a/myweb_qf07"))
     }
-}
 
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'myshop',
+            'USER': 'root',
+            'PASSWORD': '6505',
+            'HOST': 'localhost',  # Use '127.0.0.1' if you prefer
+            'PORT': '3306',       # MySQL default port
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
