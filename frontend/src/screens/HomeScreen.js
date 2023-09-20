@@ -107,11 +107,11 @@ function HomeScreen({ history }) {
               className="d-flex  bg-light px-4   text-center justify-content-center"
               style={{ borderRadius: "2rem" }}
             >
-              {/* <SelectPrice
+              <SelectPrice
                 selectedPrice={selectedPrice}
                 handlePriceChange={handlePriceChange}
                 products={products}
-              /> */}
+              />
               <SelectBrand
                 brands={uniqueBrands}
                 selectedBrand={selectedBrand}
