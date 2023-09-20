@@ -89,8 +89,8 @@ function HomeScreen({ history }) {
         className="products bg-danger bg-opacity-25 "
         style={{ borderRadius: "2rem" }}
       >
-        <Navbar expand="lg" className="d-flex  p-2 ">
-          <div className="my-2">
+        <Navbar expand="lg" className="d-flex py-2 px-2 ">
+          <div className="">
             <SelectCategory
               categories={uniqueCategories}
               selectedCategory={selectedCategory}
@@ -101,17 +101,17 @@ function HomeScreen({ history }) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"
-            className="justify-content-end"
+            className="justify-content-end px-2 py-2"
           >
             <Nav
-              className="d-flex  bg-light px-4 my-2  text-center justify-content-center"
+              className="d-flex  bg-light px-4   text-center justify-content-center"
               style={{ borderRadius: "2rem" }}
             >
-              <SelectPrice
+              {/* <SelectPrice
                 selectedPrice={selectedPrice}
                 handlePriceChange={handlePriceChange}
                 products={products}
-              />
+              /> */}
               <SelectBrand
                 brands={uniqueBrands}
                 selectedBrand={selectedBrand}

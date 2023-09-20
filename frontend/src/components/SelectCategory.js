@@ -8,14 +8,17 @@ const SelectCategory = ({
 }) => {
   return (
     <div>
-      <Dropdown className="my-3 px-2 ">
-        <Dropdown.Toggle variant="red" className="text-dark fs-3 mx-2 px-5" 
-        style={{borderRadius:'2rem',background:'white'}}>
+      <Dropdown className="my-2  ">
+        <Dropdown.Toggle
+          variant="red"
+          className="text-dark fs-4  px-3"
+          style={{ borderRadius: "2rem", background: "white" }}
+        >
           {selectedCategory === "default" ? "Products" : `${selectedCategory}`}
         </Dropdown.Toggle>
 
         <Dropdown.Menu
-          className="py-2 px-3 mx-3 my-2"
+          className="py-2 px-3 mx-3"
           style={{ borderRadius: "2rem" }}
         >
           <Dropdown.Item
