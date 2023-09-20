@@ -166,7 +166,7 @@ function ProfileScreen({ history }) {
                   <Col className="m-3 ">
                     <h3 className="text-center">User Profile</h3>
 
-                    <Card className=" my-3 p-3 ">
+                    <Card className=" my-3 p-1 ">
                       <Form onSubmit={submitHandler}>
                         {/* <Form.Group as={Row} className="m-3">
                           <Form.Label column sm="3">
@@ -289,7 +289,7 @@ function ProfileScreen({ history }) {
                 <Tab.Pane eventKey="user_order">
                   <Col className="mt-3 ">
                     <h3 className="text-center">My Orders</h3>
-                    <Card className=" m-3 p-3 ">
+                    <Card className=" my-3 p-1 ">
                       {loadingOrders ? (
                         <Loader />
                       ) : errorOrders ? (
