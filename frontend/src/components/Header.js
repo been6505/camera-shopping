@@ -12,7 +12,7 @@ import { LinkContainer } from "react-router-bootstrap";
 // import { ReactComponent as BrandIcon } from "./assets/brand-icon.svg";
 
 /* REACT - REDUX */
-// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 /* ACTION CREATORS */
 // import { logout } from "../actions/userActions";
@@ -26,6 +26,10 @@ import User from "./User";
 import mlogo from "../m-logo.png";
 
 function Header() {
+
+  const userLogin = useSelector((state) => state.userLogin);
+
+  const { userInfo } = userLogin;
   return (
     <header>
       <Navbar
@@ -98,7 +102,7 @@ function Header() {
               >
                 <User />
               </div>
-
+              {userInfo && userInfo.isAdmin && (
               <div
                 className=" d-flex justify-content-center "
                 style={{
@@ -112,6 +116,7 @@ function Header() {
               >
                 <Admin />
               </div>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

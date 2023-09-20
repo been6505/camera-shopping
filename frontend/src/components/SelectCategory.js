@@ -9,7 +9,8 @@ const SelectCategory = ({
   return (
     <div>
       <Dropdown className="my-3 px-2 ">
-        <Dropdown.Toggle variant="red" className="text-dark fs-3">
+        <Dropdown.Toggle variant="red" className="text-dark fs-3 mx-2 px-5" 
+        style={{borderRadius:'2rem',background:'white'}}>
           {selectedCategory === "default" ? "Products" : `${selectedCategory}`}
         </Dropdown.Toggle>
 

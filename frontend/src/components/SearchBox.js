@@ -20,21 +20,21 @@ function SearchBox() {
   };
 
   return (
-    <div className=" d-md-block  ">
+    <div className=" d-md-block px-2 ">
       <Form onSubmit={submitHandler} className="d-flex">
         <Form.Control
           type="text"
           name="q"
           placeholder="search"
           onChange={(e) => setKeyword(e.target.value)}
-          className="mr-2 ml-2 bg-light"
-          style={{ width: "80%", borderRadius: "20rem" }}
+          className=" bg-light"
+          style={{  borderRadius: "20rem" }}
         ></Form.Control>
 
         <Button
           type="submit"
           variant="outline-danger"
-          className="btn btn-light mx-2 button-focus-css "
+          className="btn btn-light  button-focus-css "
           style={{ borderRadius: "3rem" }}
         >
           <i className="fas fa-search"></i>

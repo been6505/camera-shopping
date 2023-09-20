@@ -89,7 +89,7 @@ function HomeScreen({ history }) {
         className="products bg-danger bg-opacity-25 "
         style={{ borderRadius: "2rem" }}
       >
-        <Navbar expand="lg" className="d-flex  p-2">
+        <Navbar expand="lg" className="d-flex  p-2 ">
           <div className="my-2">
             <SelectCategory
               categories={uniqueCategories}
@@ -104,7 +104,7 @@ function HomeScreen({ history }) {
             className="justify-content-end"
           >
             <Nav
-              className="d-flex  bg-light px-4 my-2  text-end justify-content-center"
+              className="d-flex  bg-light px-4 my-2  text-center justify-content-center"
               style={{ borderRadius: "2rem" }}
             >
               <SelectPrice
