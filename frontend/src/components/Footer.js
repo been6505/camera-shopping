@@ -56,16 +56,16 @@ function Footer({ productCategories }) {
           <Container className="text-center text-md-start mt-5">
             <Row className="mt-3">
               <Col md="3" lg="4" xl="3" className="mx-auto mb-4">
-                <h5 className="text-uppercase  fw-bold mt-4 ">
+                <h6 className="text-uppercase  fw-bold mt-4 ">
                   
                   <a href="/"  className="m-3 "> M&m Productions</a>
                  
-                </h5>
+                </h6>
                 <p className="m-3">เพื่อประสบการณ์ที่ดีของคุณ</p>
               </Col>
 
               <Col md="2" lg="2" xl="2" className="mx-auto mb-4">
-                <h5 className="text-uppercase fw-bold mt-4 ">Products</h5>
+                <h6 className="text-uppercase fw-bold mt-4 ">Products</h6>
 
                 <SelectCategoryList
                   categories={uniqueCategories}
@@ -75,7 +75,7 @@ function Footer({ productCategories }) {
               </Col>
 
               <Col md="3" lg="2" xl="2" className="mx-auto mb-4">
-                <h5 className="text-uppercase fw-bold mt-4">Brand</h5>
+                <h6 className="text-uppercase fw-bold mt-4">Brand</h6>
                 <SelectBrandList
                   brands={uniqueBrands}
                   selectedBrand={selectedBrand}
@@ -83,12 +83,12 @@ function Footer({ productCategories }) {
                 />
               </Col>
 
-              <Col md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                <h5 className=" text-uppercase fw-bold mt-4 ">
+              <Col md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4 fs-6">
+                <h6 className=" text-uppercase fw-bold mt-4 ">
                   <Link to="/contact" >
                     Contact
                   </Link>
-                </h5>
+                </h6>
 
                 <p>
                   <a icon="home" />
@@ -110,10 +110,10 @@ function Footer({ productCategories }) {
           </Container>
         </section>
 
-        <div className="text-center p-4">
-          © 2023 Copyright :
+        <div className="text-center p-4 fs-6">
+          © 2023 Copyright : 
           <a
-            className="text-reset fw-bold"
+            className="text-reset fw-bold "
             href="/"
             style={{ textDecoration: "none" }}
           >

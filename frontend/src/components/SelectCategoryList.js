@@ -16,7 +16,7 @@ const SelectCategoryList = ({
               onClick={() => handleCategoryChange(category)}
               active={selectedCategory === category}
             >
-              <p className="fs-5">{category}</p>
+              <p className="fs-6">{category}</p>
             </div>
           ))}
         </div>

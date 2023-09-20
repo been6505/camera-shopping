@@ -10,8 +10,7 @@ const SelectBrand = ({ brands, selectedBrand, handleBrandChange }) => {
             onClick={() => handleBrandChange(brand)}
             active={selectedBrand === brand}
           >
-          
-            <p className="fs-5">{brand}</p>
+            <p className="fs-6">{brand}</p>
           </div>
         ))}
       </div>
