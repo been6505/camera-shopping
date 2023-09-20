@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-i-b2o_4@ru#jr_y)vbhdjng$607jjufk4i8b+*wrk0p&!ae%-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'camera-shopping.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mm-productions.onrender.com']
 
 
 # Application definition
@@ -132,7 +132,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 if not DEBUG:
     DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("postgres://myweb_qf07_user:pTs0ptBxAxcxDDIb23laUENNkcuTYURP@dpg-ck58dt6ru70s7398jhb0-a/myweb_qf07"))
+        "default": dj_database_url.parse(os.environ.get("postgres://mydatabase_3qvw_user:7wQQ3N3ZWj6r1VwtZwOZBqNdENBq5sMx@dpg-ck5bec6g2bec73dg9gj0-a/mydatabase_3qvw"))
     }
 
 else:
