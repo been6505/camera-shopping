@@ -43,7 +43,7 @@ function Header() {
             <a href="/" className="d-flex text-light text-decoration-none py-1 px-2">
               <img src={mlogo} alt="M&m" className="logo " />
 
-              <h1 className="text-dark p-2 my-1 fs-5">
+              <h1 className="text-light p-2 my-1 fs-5">
                 M&m
                 <br />
                 Productions
